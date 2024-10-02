@@ -30,9 +30,9 @@ public class Topic_05_Xpath_Technical {
         // contains(string(),'...')
         driver.findElement(By.xpath("//a[contains(string(),'Add to Wishlist')]"));
         //span[text()=concat('Hello "John", What',"'s happened?")]
-        // and
+        // AND
         driver.findElement(By.xpath("//input[@type='email' and @id='email']"));
-        // or
+        // OR
         driver.findElement(By.xpath("//input[@type='email' or @id='email']"));
         // outside parent
         driver.findElement(By.xpath("//span[text()='Add to Cart'][1]")
