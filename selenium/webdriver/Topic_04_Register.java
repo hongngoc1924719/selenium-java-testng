@@ -128,7 +128,7 @@ public class Topic_04_Register {
         driver.findElement(By.xpath("//form[@id='frmLogin']//button[text()='ĐĂNG KÝ']")).click();
         Assert.assertEquals(driver.findElement(By.id("txtPhone-error")).getText(),"Vui lòng nhập con số");
 
-        // Case 4 - Not start with 0xx
+        // Case 4 - Not start with 0x
         driver.findElement(By.name("txtPhone")).clear();
         driver.findElement(By.name("txtPhone")).sendKeys("91239898");
         driver.findElement(By.xpath("//form[@id='frmLogin']//button[text()='ĐĂNG KÝ']")).click();
