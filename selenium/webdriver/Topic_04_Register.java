@@ -139,4 +139,5 @@ public class Topic_04_Register {
     public void afterClass() {
         driver.quit();
     }
+
 }
