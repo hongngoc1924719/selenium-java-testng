@@ -37,6 +37,7 @@ public class Topic_04_Register {
     @Test
     public void Register_02_Invalid_Email() {
         driver.get("https://alada.vn/tai-khoan/dang-ky.html");
+
         driver.findElement(By.name("txtFirstname")).sendKeys("Donald Trump");
         driver.findElement(By.name("txtEmail")).sendKeys("123@123");
         driver.findElement(By.name("txtCEmail")).sendKeys("123@123");
@@ -54,6 +55,7 @@ public class Topic_04_Register {
     @Test
     public void Register_03_Incorrect_Confirm_Email() {
         driver.get("https://alada.vn/tai-khoan/dang-ky.html");
+
         driver.findElement(By.name("txtFirstname")).sendKeys("Donald Trump");
         driver.findElement(By.name("txtEmail")).sendKeys("abc123@gmail.com");
         driver.findElement(By.name("txtCEmail")).sendKeys("abc456@gmail.com");
@@ -69,6 +71,7 @@ public class Topic_04_Register {
     @Test
     public void Register_04_Invalid_Password() {
         driver.get("https://alada.vn/tai-khoan/dang-ky.html");
+
         driver.findElement(By.name("txtFirstname")).sendKeys("Donald Trump");
         driver.findElement(By.name("txtEmail")).sendKeys("abc123@gmail.com");
         driver.findElement(By.name("txtCEmail")).sendKeys("abc123@gmail.com");
@@ -85,6 +88,7 @@ public class Topic_04_Register {
     @Test
     public void Register_05_Incorrect_Confirm_Password() {
         driver.get("https://alada.vn/tai-khoan/dang-ky.html");
+
         driver.findElement(By.name("txtFirstname")).sendKeys("Donald Trump");
         driver.findElement(By.name("txtEmail")).sendKeys("abc123@gmail.com");
         driver.findElement(By.name("txtCEmail")).sendKeys("abc123@gmail.com");
