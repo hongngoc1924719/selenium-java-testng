@@ -35,14 +35,14 @@ public class Topic_05_Xpath_Technical {
         // OR
         driver.findElement(By.xpath("//input[@type='email' or @id='email']"));
         // outside parent
-        driver.findElement(By.xpath("//span[text()='Add to Cart'][1]")
+        driver.findElement(By.xpath("//span[text()='Add to Cart'][1]"));
     }
 
     @Test
     public void TC_02_() {
         driver.get("https://automationfc.github.io/jquery-selectable/");
         // inside parent
-        driver.findElement(By.xpath("//ol[@id='selectable']/li[12]")
+        driver.findElement(By.xpath("//ol[@id='selectable']/li[12]"));
         // position()
         driver.findElement(By.xpath("//ol[@id='selectable']/li[position()=1]"));
         // last()
