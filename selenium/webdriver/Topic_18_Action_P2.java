@@ -65,7 +65,7 @@ public class Topic_18_Action_P2 {
     }
 
     @Test
-    public void TC_03_ClickAndHold_Fix() {
+    public void TC_03_DoubleClick() {
         driver.get("https://automationfc.github.io/basic-form/index.html");
 
         WebElement doubleClick = driver.findElement(By.xpath("//button[text()='Double click me']"));
